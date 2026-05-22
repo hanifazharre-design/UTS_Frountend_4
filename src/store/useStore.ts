@@ -611,6 +611,8 @@ export const useStore = create<AppState>((set, get) => {
           }
         }
       } catch {}
+      const evts = getLocalEvents().filter(e => e.id !== id);
+      saveLocalEvents(evts);
       set({ events: evts, loading: false });
       return true;
     },

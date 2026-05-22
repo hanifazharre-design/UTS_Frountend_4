@@ -37,7 +37,6 @@ export const Dashboard: React.FC = () => {
     categories,
     speakers,
     events,
-    pengurus,
     fetchCategories,
     fetchSpeakers,
     fetchEvents,
